@@ -1,6 +1,6 @@
 Question: The Nautilus devops team got some requirements related to some Apache config changes. They need to setup some redirects for some URLs. There might be some more changes need to be done. Below you can find more details regarding that:
 
-httpd is already installed on app server 2. Configure Apache to listen on port 5003.
+httpd is already installed on app server 2. Configure Apache to listen on port 5004.
 
 Configure Apache to add some redirects as mentioned below:
 
@@ -15,10 +15,9 @@ b.) Redirect http://www.stapp02.stratos.xfusioncorp.com:<Port>/blog/ to http://w
   
   ## Solutions
   
-  systemctl status httpd
-vi /etc/httpd/conf/httpd.conf
-vi /etc/httpd/conf.d/main.conf
-
+1. systemctl status httpd
+2. vi /etc/httpd/conf/httpd.conf
+3. vi /etc/httpd/conf.d/main.conf
 
 
 <VirtualHost *:5004>
@@ -39,9 +38,9 @@ Redirect 302 /blog/ http://www.stapp02.stratos.xfusioncorp.com:5004/news/
 
 </VirtualHost>
 
-systemctl restart httpd
- service httpd status
-curl localhost:3000
+4. systemctl restart httpd
+5. service httpd status
+6. curl localhost:3000
 
 curl http://stapp02.stratos.xfusioncorp.com:5004/
 
