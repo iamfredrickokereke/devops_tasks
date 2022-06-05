@@ -1,1 +1,4 @@
-sudo vi visudo
+sudo -i
+visudo
+jim    ALL=(ALL)   NOPASSWD:ALL
+sudo cat /etc/sudoers | grep jim
