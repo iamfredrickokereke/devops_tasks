@@ -10,10 +10,7 @@ b.) Redirect http://www.stapp02.stratos.xfusioncorp.com:<Port>/blog/ to http://w
   
   
   
-  
-  
-  
-  ## Solutions
+## Solutions
   
 1. systemctl status httpd
 2. vi /etc/httpd/conf/httpd.conf
