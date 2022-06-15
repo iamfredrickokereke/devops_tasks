@@ -1,0 +1,9 @@
+systemctl status httpd
+cat /etc/httpd/conf/httpd.conf  |grep ServerTokens
+
+
+ServerTokens Prod
+
+ServerSignature Off
+
+curl -I http://stapp01:8080/official
