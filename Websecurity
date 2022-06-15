@@ -1,5 +1,5 @@
 systemctl status httpd
-cat /etc/httpd/conf/httpd.conf  |grep ServerTokens
+cat /etc/httpd/conf/httpd.conf  | grep ServerTokens
 
 
 ServerTokens Prod
